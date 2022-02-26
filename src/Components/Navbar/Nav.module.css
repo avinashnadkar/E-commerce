@@ -1,0 +1,113 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    height: 16vh;
+}
+.mainNavbar{
+    width: 100%;
+    background-color: #008ecc;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+.logo{
+    width: 13%;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    width: 65%
+}
+
+.searchBar input{
+    width: 90%;
+    padding: 3px 7px;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.categories{
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(226, 226, 226);
+}
+
+.categories ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.categories ul li{
+    list-style: none;
+    /* margin-left: 50px; */
+    padding: 5px 0px;
+    font-size: 14px;
+ }
+ 
+ .categories ul li div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+ }
+
+ .categories ul li .dropDown {
+    position: absolute;
+    margin-left: -10px;
+    background-color: rgb(226, 226, 226);
+    width: fit-content;
+    height: fit-content;
+    padding:  0px;
+ }
+
+ .active{
+     display: block;
+ }
+
+ .categories ul li .dropDown li{
+    margin-top: 5px;
+    padding:  10px;
+    cursor: pointer;
+ }
+
+ .categories ul li .dropDown li:hover{
+    background-color: #f5f5f5;
+    color: rgb(25, 114, 187);
+ }
+ 
+ .navBtns{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+ }
+
+ .navBtns button{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+ }
+
+ .navBtns button span{
+    margin-left: 7px;
+ }
+
+ /*================================= Responsive media queries =====================================*/
+
+ 

@@ -1,0 +1,42 @@
+.productCard{
+    border: 1px solid rgb(194, 194, 194);
+    width: 200px;
+    padding: 10px 7px;
+    margin: 0;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+.productName{
+    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.price{
+    padding: 5px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.discountedPrice{
+    padding: 5px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.totalSaving{
+    color:green;
+    padding: 5px;
+    margin: 0;
+}
+
+.addToCartBtn{
+    padding: 10px 0px;
+    background-color: #008ecc;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

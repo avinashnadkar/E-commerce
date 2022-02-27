@@ -1,0 +1,66 @@
+.emptyCart{
+    width: 300px;
+    text-align: center;
+    height: 80vh;
+    margin: 0 auto;
+}
+.emptyCart img{
+    margin-top: 80px;
+}
+.emptyCart button{
+    padding: 10px 25px;
+    background-color: #008ecc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.cart{
+    padding: 30px;
+    background-color: rgb(243, 243, 243);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart .products{
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    border-radius: 5px;
+}
+
+.totalCost{
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentDetails{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.paymentDetails div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.payingPrice{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.savings{
+    color: green;
+}
+
+.placeOrder{
+    padding: 10px 25px;
+    background-color: #008ecc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}

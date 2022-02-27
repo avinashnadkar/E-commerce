@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "name" : "Nivea Fresh Natural Deodorant for Women 150 ml",
+        "img" : "https://www.jiomart.com/images/product/75x75/490052703/nivea-fresh-natural-deodorant-for-women-150-ml-0-20210524.jpg",
+        "price" : 450,
+        "discount" :225,
+        "quantity" : 0
+    },
+    {
+        "id" : 2,
+        "name" : "Sonaka Seedless Grapes 1 kg",
+        "img" : "https://www.jiomart.com/images/product/75x75/590116962/grapes-sonaka-seedless-per-kg-0-20201215.jpg",
+        "price" : 69,
+        "discount" : 0,
+        "quantity" : 0
+    },
+    {
+        "id" : 3,
+        "name" : "Bagrry's Choco Fills 250 g",
+        "img" : "https://www.jiomart.com/images/product/75x75/590114062/bagrry-s-choco-fills-250-g-0-20210824.jpg",
+        "price" : 190,
+        "discount" : 95,
+        "quantity" : 0
+    }
+]

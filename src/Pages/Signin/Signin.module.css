@@ -1,0 +1,75 @@
+.signin{
+    margin: 0 auto;
+    width: fit-content;
+    height: 70vh;
+    margin-top: 100px;
+}
+
+.signin h3, .signin p {
+    padding: 0xp;
+    margin: 15px 0px;
+    font-family: sans-serif;
+}
+
+.inputBox{
+    border: 1px solid rgb(206, 206, 206);
+    width: fit-content;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.countryCode{
+    padding: 0px 7px;
+    font-family: sans-serif;
+}
+
+.mobileNumInput{
+    width: 400px;
+    height: 25px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-left: 1px solid rgb(180, 180, 180);
+    padding: 0px 7px;
+    font-family: sans-serif;
+}
+
+.signin .submitBtn{
+    background-color: #008ecc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    margin: 20px 0px 0px 400px;
+}
+
+
+.inputBoxOtp{
+    border: 1px solid rgb(206, 206, 206);
+    width: fit-content;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+.otpInput{
+    width: 450px;
+    height: 25px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 0px 7px;
+    font-family: sans-serif;
+}
+
+.signin .verifyBtn{
+    background-color: #008ecc;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+}

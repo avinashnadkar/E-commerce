@@ -32,17 +32,17 @@ const Footer = () => {
 
             <div className={styles.col_3}>
                <h4>CONTACT US</h4> 
-                <p>WhatsApp us : 70003 70003</p>
+                <p>WhatsApp us : 700xxx xxx03</p>
 
-                <p> Call Us : 1800 890 1222
+                <p> Call Us : 18xx xxx xx22
                 8:00 AM to 8:00 PM, 365 days</p>
 
                 <p> Please note that you are accessing the 
-                    BETA Version of www.jiomart.com</p>
+                    BETA Version of onlineshop</p>
 
                 <p>Should you encounter any bugs, glitches, lack of functionality, 
                     delayed deliveries, billing errors or other problems on the 
-                    beta website, please email us on cs@jiomart.com </p>
+                    beta website, please email us on onlineshop </p>
 
                 <h4>DOWNLOAD APP</h4>
 

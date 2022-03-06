@@ -1,0 +1,156 @@
+.checkout{
+    padding: 30px;
+    background-color: rgb(243, 243, 243);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkout h2{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.col_1{
+    width: 50%;
+}
+
+.col_2{
+    width: 40%;
+}
+
+.col_1 h2{
+    padding: 0;
+    margin: 0;
+}
+
+
+.addressCard{
+    background-color:rgb(255, 255, 255);
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.addressCard h3{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.address{
+    background-color:rgb(243, 243, 243);
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+}
+
+.address h4{
+    padding: 3px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.address p{
+    padding: 3px;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+
+.basket{
+    background-color:rgb(255, 255, 255);
+    padding: 15px;
+    margin-top: 40px;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.basket h3{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.checkoutProductCard{
+    display: flex;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.productDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.productDetails p{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.priceAndDiscount{
+    display: flex;
+}
+
+.priceAndDiscount p:nth-child(2){
+    margin-left: 10px;
+    color: gray;
+}
+
+.priceAndDiscount p:nth-child(3){
+    margin-left: 10px;
+    color: green;
+}
+
+.quantity{
+    color: gray;
+}
+
+.deliveryDate{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    color: gray;
+}
+
+.breadScrumb{
+    display: flex;
+    align-items: center;
+}
+
+.breadScrumb p{
+    padding: 5px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadScrumb p{
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadScrumbLine{
+    margin: 0 5px;
+    width: 60px;
+    height: 1px;
+    background-color: rgb(207, 204, 204);
+}
+
+.col_2 .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.paymentBtn{
+    padding: 10px 25px;
+    background-color: #008ecc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+}

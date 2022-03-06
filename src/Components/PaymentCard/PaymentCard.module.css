@@ -1,0 +1,28 @@
+
+.paymentDetails{
+    /* width: 30%; */
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.paymentDetails div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.paymentDetails div p{
+    font-size: 14px;
+}
+
+.payingPrice{
+    font-weight: bold;
+}
+
+.savings{
+    color: green;
+    font-size: 14px;
+}
+

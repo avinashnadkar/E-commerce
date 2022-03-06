@@ -1,0 +1,58 @@
+.payment{
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.col_1{
+    width: 60%;
+}
+
+.col_2{
+    width: 35%;
+}
+
+.paymentMethods{
+    background-color: white;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.paymentDetails{
+    background-color: white;
+}
+
+.paymentBtn{
+    padding: 10px 25px;
+    background-color: #008ecc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+}
+
+
+.breadScrumb{
+    display: flex;
+    align-items: center;
+}
+
+.breadScrumb p{
+    padding: 5px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadScrumb p{
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadScrumbLine{
+    margin: 0 5px;
+    width: 60px;
+    height: 1px;
+    background-color: rgb(207, 204, 204);
+}

@@ -19,7 +19,18 @@ const ProductCard = (props) => {
 
             }
 
-            <button className={styles.addToCartBtn}>Add to cart +</button>
+            {
+               props.quantity >= 1 
+               ? 
+               <div className={styles.qtyCounter}>
+                   <button>+</button>
+                   {props.quantity}
+                   <button>-</button>
+               </div>
+               : 
+               <button className={styles.addToCartBtn}>Add to cart +</button>
+            }
+            
         </div>
     )
 }

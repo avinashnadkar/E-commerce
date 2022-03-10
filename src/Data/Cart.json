@@ -5,7 +5,7 @@
         "img" : "https://www.jiomart.com/images/product/75x75/490052703/nivea-fresh-natural-deodorant-for-women-150-ml-0-20210524.jpg",
         "price" : 450,
         "discount" :225,
-        "quantity" : 0
+        "quantity" : 5
     },
     {
         "id" : 2,
@@ -21,6 +21,6 @@
         "img" : "https://www.jiomart.com/images/product/75x75/590114062/bagrry-s-choco-fills-250-g-0-20210824.jpg",
         "price" : 190,
         "discount" : 95,
-        "quantity" : 0
+        "quantity" : 3
     }
 ]

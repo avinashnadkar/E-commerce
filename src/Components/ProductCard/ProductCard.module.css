@@ -41,3 +41,20 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.qtyCounter{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding: 10px 3px 5px 0px;
+    justify-content: space-around;
+}
+
+.qtyCounter button{
+    padding: 10px 15px;
+    border: none;
+    background-color: #008ecc;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}

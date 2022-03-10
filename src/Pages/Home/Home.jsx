@@ -4,6 +4,7 @@ import data from "../../Data/Products.json";
 import styles from "./Home.module.css";
 
 const Home = () => {
+
     return(
         <div>
 
@@ -12,7 +13,7 @@ const Home = () => {
               <div className={styles.productContainer}>
                   {
                     data.map((el)=>{
-                    return <ProductCard {...el} />
+                    return <ProductCard {...el} quantity={0}/>
                     })
                   }
               </div>

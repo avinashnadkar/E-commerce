@@ -1,0 +1,24 @@
+.imgContainer{
+  display: flex;
+  align-items: center;
+}
+
+.image{
+    width: 100%;
+    background-color: rgb(74, 121, 161);
+}
+
+.leftBtn{
+    padding: 5px;
+    position: absolute;
+    background-color: rgba(155, 155, 155, 0.596);
+    border: 1px solid gray;
+}
+
+.rightBtn{
+    position: absolute;
+    padding: 5px;
+    right:0px;
+    background-color: rgba(155, 155, 155, 0.596);
+    border: 1px solid gray;
+}

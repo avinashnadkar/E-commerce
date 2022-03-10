@@ -6,16 +6,18 @@ import Cart from "../Pages/Cart/Cart";
 import Admin from "../Pages/Admin/Admin";
 import Checkout from "../Pages/Checkout/Checkout";
 import Payment from "../Pages/Payment/Payment";
+import Home from "../Pages/Home/Home";
 
 const Router = () => {
     return(
         <>
             {
               //render common components according to pages
-              (location.pathname == '/admin' ) ?  <></> :  <Nav/> 
+              (window.location.pathname == '/admin' ) ?  <></> :  <Nav/> 
             }
     
             <Routes>
+              <Route exact path="/" element={<Home/>}/>
               <Route exact path="/login" element={<Signin/>}/>
               <Route exact path="/cart" element={<Cart/>}/>
               <Route exact path="/Admin" element={<Admin/>}/>
@@ -25,7 +27,7 @@ const Router = () => {
 
             {
               //render common components according to pages
-              (location.pathname == '/admin' ) ?  <></> : <Footer/>
+              (window.location.pathname == '/admin' ) ?  <></> : <Footer/>
 
             }
         </>

@@ -5,6 +5,7 @@
     margin: 0;
     font-family: sans-serif;
     border-radius: 5px;
+    justify-self: center;
 }
 
 .productName{

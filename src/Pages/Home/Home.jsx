@@ -1,9 +1,18 @@
 import Carousel from "../../Components/Carousels/Carousel";
 import ProductCard from "../../Components/ProductCard/ProductCard";
-import data from "../../Data/Products.json";
 import styles from "./Home.module.css";
+import { useSelector,useDispatch } from "react-redux";
+import { addToCart, increaseQty, decreaseQty } from "../../Redux/action";
 
 const Home = () => {
+
+    //get state of homePage
+    const products = useSelector((state)=>state.productReducer.homePageProducts);
+    const cart = useSelector((state)=>state.cartReducer.cart)
+
+    //dispatch function to reducers
+    const dispatch = useDispatch();
+
 
     return(
         <div>
@@ -12,8 +21,15 @@ const Home = () => {
         
               <div className={styles.productContainer}>
                   {
-                    data.map((el)=>{
-                    return <ProductCard {...el} quantity={0}/>
+                    products.map((el)=>{
+                      {/* update quantity */}
+                      for(var i=0;i<cart.length;i++){
+                         if(cart[i].name == el.name){
+                            el.quantity = cart[i].quantity
+                            break;
+                         }
+                      }
+                      return <ProductCard {...el} addCart={()=>dispatch(addToCart(el))} increase={()=>dispatch(increaseQty(el))} decrease={()=>{dispatch(decreaseQty(el))}}/>
                     })
                   }
               </div>

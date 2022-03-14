@@ -5,6 +5,11 @@ nav{
     font-family: sans-serif;
     height: 16vh;
 }
+
+a{
+    text-decoration: none;
+}
+
 .mainNavbar{
     width: 100%;
     background-color: #008ecc;
@@ -102,6 +107,7 @@ nav{
     background-color: transparent;
     border: none;
     color: white;
+    cursor: pointer;
  }
 
  .navBtns button span{

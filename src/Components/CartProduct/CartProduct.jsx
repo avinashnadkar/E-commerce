@@ -15,9 +15,9 @@ const CartProduct = (props) => {
                 </div>
            </div>
            <div className={styles.quantityCounter}>
-               <button>-</button>
+               <button onClick={props.decrease}>-</button>
                {props.quantity}
-               <button>+</button>
+               <button onClick={props.increase}>+</button>
            </div>
        </div>
     )

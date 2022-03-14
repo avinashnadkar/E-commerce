@@ -20,15 +20,15 @@ const ProductCard = (props) => {
             }
 
             {
-               props.quantity >= 1 
+               props.quantity >= 1
                ? 
                <div className={styles.qtyCounter}>
-                   <button>+</button>
+                   <button onClick={props.increase}>+</button>
                    {props.quantity}
-                   <button>-</button>
+                   <button onClick={props.decrease}>-</button>
                </div>
                : 
-               <button className={styles.addToCartBtn}>Add to cart +</button>
+               <button className={styles.addToCartBtn} onClick={props.addCart}>Add to cart +</button>
             }
             
         </div>

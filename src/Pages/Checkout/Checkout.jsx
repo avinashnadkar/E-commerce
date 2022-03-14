@@ -4,9 +4,18 @@ import PaymentCard from "../../Components/PaymentCard/PaymentCard";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import SummarizeIcon from '@mui/icons-material/Summarize';
+import { useSelector } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
+
+    //state for checkout
+    const cart = useSelector((state)=>state.cartReducer.cart)
+    const totalP = useSelector((state)=>state.cartReducer.total);
+    const totalS = useSelector((state)=>state.cartReducer.totalSavings);
+    const totalM = useSelector((state)=>state.cartReducer.mrp);
+
     return(
         <div className={styles.checkout}>
 
@@ -27,7 +36,7 @@ const Checkout = () => {
                 <div className={styles.basket}>
                     <h3>Groceries Basket</h3>
                     {
-                        data.map((el)=>{
+                        cart.map((el)=>{
                             return(
                                 <div className={styles.checkoutProductCard} key={uuidv4()}>
                                     <img src={el.img}/>
@@ -68,9 +77,9 @@ const Checkout = () => {
                    <CreditCardIcon color="disabled" />
                    <p>Payment</p>
                 </div>
-                <PaymentCard/>
+                <PaymentCard price={totalM} discount={totalS}/>
                 <div className={styles.btn}>
-                    <button className={styles.paymentBtn}>Make payment</button>
+                 <Link to={"/payment"}><button className={styles.paymentBtn}>Make payment</button></Link> 
                 </div>
           </div>
           

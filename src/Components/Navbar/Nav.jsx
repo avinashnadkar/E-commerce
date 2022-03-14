@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import data from "../../Data/categories.json";
 import DropDown from "./DropDown";
 import { useState } from "react";
+import {Link} from 'react-router-dom';
 
 const Nav = () => {
 
@@ -45,8 +46,8 @@ const Nav = () => {
                 </div>
 
                 <div className={styles.navBtns}>
-                <button> <PersonIcon /> <span>Sign in / Sign up</span>  </button>
-                <button> <ShoppingCartIcon/>  <span>Cart</span> </button>
+                <Link to="/login"> <button> <PersonIcon /> <span>Sign in / Sign up</span> </button></Link> 
+                <Link to="/cart"><button> <ShoppingCartIcon/>  <span>Cart</span> </button></Link>
                 </div>
             </div>
 

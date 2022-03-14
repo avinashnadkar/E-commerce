@@ -7,9 +7,9 @@ const Signin = () => {
 
 
     //States from store
-    const phoneNumber = useSelector((state)=>state.phoneNumber);
-    const otp = useSelector((state)=>state.otp);
-    const showOtpBox = useSelector((state)=>state.showOtpInputBox);
+    const phoneNumber = useSelector((state)=>state.loginReducer.phoneNumber);
+    const otp = useSelector((state)=>state.loginReducer.otp);
+    const showOtpBox = useSelector((state)=>state.loginReducer.showOtpInputBox);
 
     //dispatch function to dispatch actions to reducer
     const dispatch = useDispatch();

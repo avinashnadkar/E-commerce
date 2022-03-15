@@ -1,4 +1,4 @@
-//////////////////////////////login actions///////////////////////////
+//////////////////////////////login and signup actions///////////////////////////
 
 //manage phone number input state
 export const loginInputHandler = (e) => {
@@ -13,6 +13,16 @@ export const otpInputHandler = (e) => {
 //toggle otp input box
 export const otpInputToggle = () => {
     return {type:"toggleOtpBox"}
+}
+
+//toggle address input box
+export const addressBoxToggle = () => {
+    return {type:"toggleAddressBox"}
+}
+
+//change input state
+export const signupInputHandler = (val,name) => {
+    return {type:"handleSignupInput", payload : {value:val,name:name}}
 }
 
 /////////////////////////product and cart actions//////////////////////////

@@ -1,0 +1,65 @@
+.signup{
+    margin: 0 auto;
+    width: fit-content;
+    height: 100vh;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.signup h3, .signup p {
+    padding: 0xp;
+    margin: 15px 0px;
+    font-family: sans-serif;
+}
+
+.lables{
+    margin-top: 150px;
+}
+
+.inputBox{
+    border: 1px solid rgb(206, 206, 206);
+    width: fit-content;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.signup .toggleBtn{
+    background-color: #008ecc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    margin: 20px 0px 0px 430px;
+}
+
+.input{
+    width: 450px;
+    height: 25px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 0px 7px;
+    font-family: sans-serif;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.btns p {
+    color: rgb(60, 149, 207);
+    cursor: pointer;
+}
+
+.btns .submitBtn{
+    background-color: #008ecc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

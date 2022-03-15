@@ -7,6 +7,7 @@ import Admin from "../Pages/Admin/Admin";
 import Checkout from "../Pages/Checkout/Checkout";
 import Payment from "../Pages/Payment/Payment";
 import Home from "../Pages/Home/Home";
+import Signup from "../Pages/Signup/Signup";
 
 const Router = () => {
     return(
@@ -23,6 +24,7 @@ const Router = () => {
               <Route exact path="/Admin" element={<Admin/>}/>
               <Route exact path="/checkout" element={<Checkout/>}/>
               <Route exact path="/payment" element={<Payment/>}/>
+              <Route exact path="/signup" element={<Signup/>}/>
             </Routes>
 
             {

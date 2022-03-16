@@ -1,8 +1,7 @@
 
 const initState = {
-    phoneNumber : "",
-    showOtpInputBox : false,
-    otp : ""
+    email : "",
+    password : ""
 }
 
 const loginReducer = (state = initState,action) => {
@@ -10,22 +9,8 @@ const loginReducer = (state = initState,action) => {
    if(action.type === "handleLoginInput"){
          return  {
             ...state,
-            phoneNumber : "" + action.payload
+            [action.payload.name] : action.payload.value
          }
-   }
-
-   if(action.type === "handleOtpInput"){
-       return {
-           ...state,
-           otp : "" + action.payload
-       }
-   }
-
-   if(action.type === "toggleOtpBox"){
-       return{
-           ...state,
-           showOtpInputBox : true
-       }
    }
 
    return state;

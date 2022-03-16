@@ -1,18 +1,8 @@
 //////////////////////////////login and signup actions///////////////////////////
 
 //manage phone number input state
-export const loginInputHandler = (e) => {
-    return {type : "handleLoginInput",payload:e}
-}
-
-//manage otp input
-export const otpInputHandler = (e) => {
-    return {type : "handleOtpInput",payload:e}
-}
-
-//toggle otp input box
-export const otpInputToggle = () => {
-    return {type:"toggleOtpBox"}
+export const loginInputHandler = (val,name) => {
+    return {type : "handleLoginInput",payload:{value:val,name:name}}
 }
 
 //toggle address input box

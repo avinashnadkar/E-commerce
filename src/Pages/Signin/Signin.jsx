@@ -1,15 +1,13 @@
 import styles from "./Signin.module.css";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useSelector, useDispatch  } from "react-redux";
-import {loginInputHandler,otpInputHandler,otpInputToggle} from "../../Redux/action";
+import {loginInputHandler} from "../../Redux/action";
+import { Link } from 'react-router-dom';
 
 const Signin = () => {
 
 
     //States from store
-    const phoneNumber = useSelector((state)=>state.loginReducer.phoneNumber);
-    const otp = useSelector((state)=>state.loginReducer.otp);
-    const showOtpBox = useSelector((state)=>state.loginReducer.showOtpInputBox);
+    const state = useSelector((state)=>state.loginReducer);
 
     //dispatch function to dispatch actions to reducer
     const dispatch = useDispatch();
@@ -19,20 +17,18 @@ const Signin = () => {
            <div className={styles.signin}>
                <h3>Sign in</h3> 
                <p>Sign in to access your Orders, Offers and Wishlist.</p>
+               <p className={styles.lables}>Email</p>
                <div className={styles.inputBox}>
-                  <span className={styles.countryCode}>+91</span>
-                  <input type="text" className={styles.mobileNumInput} placeholder="Enter your mobile number" value={phoneNumber} onChange={(e)=>dispatch(loginInputHandler(e.target.value))}/>
+                  <input type="text" className={styles.input} placeholder="Email" name="email" value={state.email} onChange={(e)=>dispatch(loginInputHandler(e.target.value,e.target.name))}/>
                </div>
-               <button className={styles.submitBtn} style={{display : showOtpBox ?  "none" : "block" }} onClick={()=>dispatch(otpInputToggle())}><ArrowForwardIosIcon/></button>
-
-               <div style={{display : showOtpBox  ? "block" : "none"}}>
-                    <div className={styles.inputBoxOtp}>
-                        <input type="text" className={styles.otpInput} placeholder="Enter your OTP" value={otp} onChange={(e)=>dispatch(otpInputHandler(e.target.value))}/>
-                    </div>
-
-                    <button className={styles.verifyBtn}>Verify</button>
+               <p className={styles.lables}>Password</p>
+               <div className={styles.inputBox}>
+                  <input type="password" className={styles.input} placeholder="Password" name="password" value={state.password} onChange={(e)=>dispatch(loginInputHandler(e.target.value,e.target.name))}/>
                </div>
-               
+               <div className={styles.btns}>
+                <Link to={"/signup"}><p>Create account</p></Link>
+                <button className={styles.submitBtn}>Sign in</button>    
+            </div>
            </div>
         </div>
     )

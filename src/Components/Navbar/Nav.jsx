@@ -6,11 +6,14 @@ import data from "../../Data/categories.json";
 import DropDown from "./DropDown";
 import { useState } from "react";
 import {Link} from 'react-router-dom';
+import { useSelector } from "react-redux";
 
 const Nav = () => {
 
     //State for category
     const [categoryData, setCategoryData] = useState(data);
+    const userData = useSelector((state)=>state.userInfoReducer)
+    let isAuth = userData.isUserLoggedIn;
 
     //Active dropdown
     const setDropDownActive = (category) => {
@@ -46,7 +49,12 @@ const Nav = () => {
                 </div>
 
                 <div className={styles.navBtns}>
-                <Link to="/login"> <button> <PersonIcon /> <span>Sign in / Sign up</span> </button></Link> 
+                    {
+                       (isAuth) ? 
+                       <Link to="/account"> <button> <PersonIcon /> <span>{userData.name}</span> </button></Link> 
+                       :
+                       <Link to="/login"> <button> <PersonIcon /> <span>Sign in / Sign up</span> </button></Link> 
+                    }
                 <Link to="/cart"><button> <ShoppingCartIcon/>  <span>Cart</span> </button></Link>
                 </div>
             </div>

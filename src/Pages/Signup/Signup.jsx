@@ -2,16 +2,26 @@ import styles from "./Signup.module.css";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import {useSelector,useDispatch} from 'react-redux';
 import {addressBoxToggle,signupInputHandler} from "../../Redux/action";
+import { signup } from "../../Redux/action";
 
 const Signup = () => {
 
     //state for signup
     const user = useSelector((state)=>state.signupReducer);
+    const userInfo = useSelector((state)=>state.userInfoReducer)
  
     //dispatch function to dispatch actions to reducers
     const dispatch = useDispatch();
 
-    console.log(user)
+    //register user
+    const registerUser = () => {
+      dispatch(signup({
+         name : user.name,
+         email : user.email,
+         address : user.addressLine1 + ", " + user.addressLine2 + ", " +user.addressLine3,
+         password : user.password
+      }))
+    }
 
     return(
         <div>
@@ -52,7 +62,7 @@ const Signup = () => {
             </div>
             <div className={styles.btns}>
                 <p onClick={()=>dispatch(addressBoxToggle())}>Go back</p>
-                <button className={styles.submitBtn}>Sign up</button>    
+                <button className={styles.submitBtn} onClick={registerUser}>Sign up</button>    
             </div>
         </div>
      </div>

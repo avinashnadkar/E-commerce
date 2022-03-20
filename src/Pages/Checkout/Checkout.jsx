@@ -1,12 +1,13 @@
 import styles from "./Checkout.module.css";
-import data from "../../Data/Cart.json";
 import PaymentCard from "../../Components/PaymentCard/PaymentCard";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import SummarizeIcon from '@mui/icons-material/Summarize';
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Checkout = () => {
 
@@ -15,6 +16,15 @@ const Checkout = () => {
     const totalP = useSelector((state)=>state.cartReducer.total);
     const totalS = useSelector((state)=>state.cartReducer.totalSavings);
     const totalM = useSelector((state)=>state.cartReducer.mrp);
+    const isAuth = useSelector((state)=>state.userInfoReducer.isUserLoggedIn);
+
+    //Redirect to login page if user is not logged in
+    let navigate = useNavigate();
+    useEffect(() => {
+        if (!isAuth) {
+            navigate("/login");
+        }
+    },[isAuth,navigate])
 
     return(
         <div className={styles.checkout}>

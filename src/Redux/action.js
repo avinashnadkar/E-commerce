@@ -27,7 +27,7 @@ export function setUserInfo(payload){
     return {type:"setUserInfo",payload}
 }
 
-/////Middle wares
+/////Middlewares
 
 //signup user network request
 export function signup(body) {
@@ -46,6 +46,26 @@ export function signup(body) {
 
     };
 }
+
+//login user network request
+
+export function login(body) {
+
+    return (dispatch) => {
+
+      return axios.post('http://localhost:5432/user/login', body)
+      .then(function (response) {
+        dispatch(isUserLoggedIn(true))
+        let result = JSON.parse(JSON.stringify(response.data.results))
+        dispatch(setUserInfo(result))
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+    };
+}
+
 
 /////////////////////////product and cart actions//////////////////////////
 

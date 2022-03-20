@@ -3,15 +3,28 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import {useSelector,useDispatch} from 'react-redux';
 import {addressBoxToggle,signupInputHandler} from "../../Redux/action";
 import { signup } from "../../Redux/action";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Signup = () => {
 
     //state for signup
     const user = useSelector((state)=>state.signupReducer);
     const userInfo = useSelector((state)=>state.userInfoReducer)
+    const isAuth = userInfo.isUserLoggedIn;
  
     //dispatch function to dispatch actions to reducers
     const dispatch = useDispatch();
+
+
+    //Redirect to previous page if user is already logged in
+    let navigate = useNavigate();
+    useEffect(() => {
+        if (isAuth) {
+            navigate(-1);
+        }
+    },[isAuth,navigate])
+
 
     //register user
     const registerUser = () => {

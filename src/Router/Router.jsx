@@ -9,6 +9,7 @@ import Payment from "../Pages/Payment/Payment";
 import Home from "../Pages/Home/Home";
 import Signup from "../Pages/Signup/Signup";
 import Category from "../Pages/Category/Category";
+import Account from "../Pages/Account/Account";
 
 const Router = () => {
     return(
@@ -27,6 +28,7 @@ const Router = () => {
               <Route exact path="/payment" element={<Payment/>}/>
               <Route exact path="/signup" element={<Signup/>}/>
               <Route exact path="/category/:param" element={<Category/>}/>
+              <Route exact path="/account" element={<Account/>}/>
             </Routes>
 
             {

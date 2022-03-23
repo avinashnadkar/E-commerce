@@ -1,0 +1,89 @@
+.account{
+    padding: 20px 30px;
+    background-color: rgb(243, 243, 243);
+}
+
+.account h2{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accountCard{
+    background-color: white;
+    width: 47%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.accountCard h4{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.row{
+    display: flex;
+}
+
+.col_1 p{
+    padding: 0px;
+    margin: 5px 0;
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.col_1 h5{
+    padding: 0px;
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.col_1 div:nth-child(2){
+    margin-top: 25px;
+}
+
+.col_2{
+    margin-left: 100px;
+}
+
+
+.col_2 p{
+    padding: 0px;
+    margin: 5px 0;
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.col_2 h5{
+    padding: 0px;
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.options{
+    background-color: white;
+    width: 47%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.options div{
+    border-bottom: 1px solid rgb(228, 228, 228);
+    padding: 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: rgb(87, 87, 87);
+    font-size: 14px;
+}

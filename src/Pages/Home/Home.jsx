@@ -3,6 +3,7 @@ import ProductCard from "../../Components/ProductCard/ProductCard";
 import styles from "./Home.module.css";
 import { useSelector,useDispatch } from "react-redux";
 import { addToCart, increaseQty, decreaseQty } from "../../Redux/action";
+import { v4 as uuidv4 } from 'uuid';
 
 const Home = () => {
 
@@ -29,7 +30,7 @@ const Home = () => {
                             break;
                          }
                       }
-                      return <ProductCard {...el} addCart={()=>dispatch(addToCart(el))} increase={()=>dispatch(increaseQty(el))} decrease={()=>{dispatch(decreaseQty(el))}}/>
+                      return <ProductCard {...el} addCart={()=>dispatch(addToCart(el))} increase={()=>dispatch(increaseQty(el))} decrease={()=>{dispatch(decreaseQty(el))}} key={uuidv4()}/>
                     })
                   }
               </div>

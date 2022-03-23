@@ -4,191 +4,179 @@
         "active" : false,
         "subCategories" : [{
             "name": "Fresh Fruits",
-            "link": "#"
+            "link": "fresh_fruits"
             },{
                 "name": "Fresh Vegetables",
-                "link": "#"
+                "link": "fresh_vegetables"
             },{
                 "name": "Herbs & Seasonings",
-                "link": "#"
+                "link": "herbs"
             },{
                 "name": "Exotic Fruits & Vegetables",
-                "link": "#"
+                "link": "exotic_fruits"
         }]
     },
     {
         "category" : "Dairy & Bakery",
         "active" : false,
         "subCategories" : [{
-            "name": "Dairy",
-            "link": "#"
+            "name": "Milk",
+            "link": "milk"
             },{
                 "name": "Toast & Khari",
-                "link": "#"
+                "link": "roast_and_Khari"
             },{
                 "name": "Cakes & Muffins",
-                "link": "#"
+                "link": "cakes_and_muffins"
             },{
                 "name": "Breads and Buns",
-                "link": "#"
+                "link": "breads_and_buns"
             },{
                 "name": "Baked Cookies",
-                "link": "#"
+                "link": "baked_cookies"
             },{
                 "name": "Bakery Snacks",
-                "link": "#"
+                "link": "bakery_snacks"
             },{
                 "name": "Batter & Chutney",
-                "link": "#"
+                "link": "batter_and_chutney"
             },{
                 "name": "Cheese",
-                "link": "#"
+                "link": "cheese"
             },{
                 "name": "Ghee",
-                "link": "#"
+                "link": "ghee"
             },{
                 "name": "Paneer & Tofu",
-                "link": "#"
+                "link": "paneer"
         }]       
     },
     {
         "category" : "Staples",
         "active" : false,
         "subCategories" : [{
-            "name": "Dairy",
-            "link": "#"
-            },{
                 "name": "Atta, Flours & Sooji",
-                "link": "#"
+                "link": "flours"
             },{
                 "name": "Dals & Pulses",
-                "link": "#"
+                "link": "pulses"
             },{
                 "name": "Rice & Rice Products",
-                "link": "#"
+                "link": "rice"
             },{
                 "name": "Edible Oils",
-                "link": "#"
+                "link": "oils"
             },{
                 "name": "Masalas & Spices",
-                "link": "#"
+                "link": "spices"
             },{
                 "name": "Salt, Sugar & Jaggery",
-                "link": "#"
+                "link": "salt_and_suger"
             },{
                 "name": "Soya Products, Wheat & Other Grains",
-                "link": "#"
+                "link": "grains"
             },{
                 "name": "Dry Fruits & Nuts",
-                "link": "#"
-            },{
-                "name": "Combo Offer",
-                "link": "#"
-        }]       
+                "link": "dry_friuts"
+            }]       
     },{
         "category" : "Men",
         "active" : false,
         "subCategories" : [{
                 "name": "Clothing Accessories",
-                "link": "#"
+                "link": "men_clothing"
             },{
                 "name": "Western Wear",
-                "link": "#"
+                "link": "men_western_wear"
             },{
                 "name": "Inner Wear",
-                "link": "#"
+                "link": "men_inner_wear"
             },{
                 "name": "Bags, Belts & Wallets",
-                "link": "#"
+                "link": "men_bags_belts"
             },{
                 "name": "Ethnic Wear",
-                "link": "#"
+                "link": "men_ethnic_wear"
             },{
                 "name": "Footwear",
-                "link": "#"
+                "link": "men_footwear"
             },{
                 "name": "Fusion Wear",
-                "link": "#"
+                "link": "men_fusion_wear"
             },{
                 "name": "Night & Lounge Wear",
-                "link": "#"
+                "link": "men_night_wear"
             },{
                 "name": "Fashion Jewellery",
-                "link": "#"
+                "link": "men_fashion_jwellery"
             },{
                 "name": "Eyewear",
-                "link": "#"
-            },{
-                "name": "Night & Loungewear",
-                "link": "#"
+                "link": "men_eyewear"
             },{
                 "name": "Watches",
-                "link": "#"
+                "link": "men_watches"
         }]       
     },{
         "category" : "Women",
         "active" : false,
         "subCategories" : [{
                 "name": "Clothing Accessories",
-                "link": "#"
+                "link": "women_clothing"
             },{
                 "name": "Western Wear",
-                "link": "#"
+                "link": "women_western_wear"
             },{
                 "name": "Lingerie & Innerwear",
-                "link": "#"
+                "link": "women_lingerie"
             },{
                 "name": "Bags, Belts & Wallets",
-                "link": "#"
+                "link": "women_bags_belts_wallets"
             },{
                 "name": "Ethnic Wear",
-                "link": "#"
+                "link": "women_ethnic_wear"
             },{
                 "name": "Footwear",
-                "link": "#"
+                "link": "women_footwear"
             },{
                 "name": "Fusion Wear",
-                "link": "#"
+                "link": "women_fusion_wear"
             },{
                 "name": "Night & Lounge Wear",
-                "link": "#"
+                "link": "women_night_wear"
             },{
                 "name": "Fashion Jewellery",
-                "link": "#"
+                "link": "women_fashion_jwellery"
             },{
                 "name": "Eyewear",
-                "link": "#"
-            },{
-                "name": "Night & Loungewear",
-                "link": "#"
+                "link": "women_eyewear"
             },{
                 "name": "Footwear",
-                "link": "#"
+                "link": "women_footwear"
             },{
                 "name": "Maternity",
-                "link": "#"
+                "link": "women_maternity"
         }]       
     },{
         "category" : "Appliances",
         "active" : false,
         "subCategories" : [{
                 "name": "Televisions",
-                "link": "#"
+                "link": "televisions"
             },{
                 "name": "Washing Machines",
-                "link": "#"
+                "link": "washing_machines"
             },{
                 "name": "Air Conditioners",
-                "link": "#"
+                "link": "ac"
             },{
                 "name": "Refrigerators",
-                "link": "#"
+                "link": "refrigerators"
             },{
                 "name": "Kitchen Appliances",
-                "link": "#"
+                "link": "kitchen"
             },{
                 "name": "Home Appliances",
-                "link": "#"
+                "link": "home_appliances"
         }]       
     }
 ]

@@ -17,6 +17,8 @@ const Checkout = () => {
     const totalS = useSelector((state)=>state.cartReducer.totalSavings);
     const totalM = useSelector((state)=>state.cartReducer.mrp);
     const isAuth = useSelector((state)=>state.userInfoReducer.isUserLoggedIn);
+    const address = useSelector((state)=>state.userInfoReducer.address)
+    const name = useSelector((state)=>state.userInfoReducer.name)
 
     //Redirect to login page if user is not logged in
     let navigate = useNavigate();
@@ -35,11 +37,8 @@ const Checkout = () => {
                 <div className={styles.addressCard}>
                 <h3>Select Delivery Address</h3>
                 <div className={styles.address}>
-                    <h4>Name of user</h4>
-                    <p>Plot No. 567, Road No.60, Andheri West, Mumbai</p>
-                    <p>Near Ganpati Mandir,</p>
-                    <p>Mumbai - 400069, Maharashtra.</p>
-                    <p>+91 -9123456780</p>
+                    <h4>{name}</h4>
+                    <p>{address}</p>
                 </div>
                 </div>
 

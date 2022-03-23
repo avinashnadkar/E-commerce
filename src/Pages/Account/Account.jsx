@@ -1,11 +1,21 @@
 import styles from './Account.module.css';
 import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Account = () => {
 
     //state for page
     const userInfo = useSelector((state)=>state.userInfoReducer)
-    console.log(userInfo)
+    const isAuth = useSelector((state)=>state.userInfoReducer.isUserLoggedIn);
+    
+    //Redirect to login page if user is not logged in
+    let navigate = useNavigate();
+    useEffect(() => {
+        if (!isAuth) {
+            navigate("/login");
+        }
+    },[isAuth,navigate])
 
     return(
        <div className={styles.account}>

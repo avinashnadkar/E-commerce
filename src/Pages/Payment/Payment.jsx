@@ -7,6 +7,7 @@ import SummarizeIcon from '@mui/icons-material/Summarize';
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Payment = () => {
 
@@ -26,6 +27,17 @@ const Payment = () => {
     },[isAuth,navigate])
         
     return(
+
+        cart.length == 0 ?
+
+        <div className={styles.emptyCart}>
+            <img src="https://www.jiomart.com/msassets/images/emptycart.svg"/>
+            <h3>Your Cart is empty!</h3>
+            <Link to={'/'}><button>Add Products</button></Link>
+        </div>
+
+        :
+
         <div className={styles.payment}>
             <div className={styles.col_1}>
                 <h2>Payment</h2>

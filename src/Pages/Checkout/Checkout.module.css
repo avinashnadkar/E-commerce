@@ -154,3 +154,20 @@
     color: white;
     margin-top: 15px;
 }
+
+.emptyCart{
+    width: 300px;
+    text-align: center;
+    height: 80vh;
+    margin: 0 auto;
+}
+.emptyCart img{
+    margin-top: 80px;
+}
+.emptyCart button{
+    padding: 10px 25px;
+    background-color: #008ecc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}

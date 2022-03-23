@@ -49,7 +49,7 @@ const Cart = () => {
                 <div className={styles.emptyCart}>
                     <img src="https://www.jiomart.com/msassets/images/emptycart.svg"/>
                     <h3>Your Cart is empty!</h3>
-                    <button>Add Products</button>
+                    <Link to={'/'}><button>Add Products</button></Link>
                 </div>
                 :
                 <div className={styles.cart}>

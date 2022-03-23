@@ -84,3 +84,31 @@ export const decreaseQty = (product) => {
     return {type:"decreaseQty", payload:product}
 }
 
+
+//set category product
+export const setCategoryProducts = (products) => {
+  return {type:"setCatProducts",payload:products}
+}
+
+//change url param
+export const setUrlParam = (param) => {
+return {type : "setUrlParam",payload:param}
+}
+
+//get products by category
+export function getProductsByCategory(param) {
+
+return (dispatch) => {
+
+  return axios.get(`http://localhost:5432/category/${param}`)
+  .then(function (response) {
+    let result = response.data
+    //console.log(response.data)
+    dispatch(setCategoryProducts(result))
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+};
+}

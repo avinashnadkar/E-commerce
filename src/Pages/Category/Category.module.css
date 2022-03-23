@@ -1,0 +1,29 @@
+.category{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+}
+
+.filter{
+    width: 18%;
+    background-color: white;
+    border-radius: 5px;
+    font-family: sans-serif;
+    padding: 15px;
+}
+
+.filter h2{
+    font-weight: lighter; 
+    color: rgb(94, 94, 94);
+}
+
+.productContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 75%;
+    gap: 20px;
+    background-color: white;
+    padding: 25px 10px;
+    border-radius: 5px;
+}

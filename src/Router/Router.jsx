@@ -8,6 +8,7 @@ import Checkout from "../Pages/Checkout/Checkout";
 import Payment from "../Pages/Payment/Payment";
 import Home from "../Pages/Home/Home";
 import Signup from "../Pages/Signup/Signup";
+import Category from "../Pages/Category/Category";
 
 const Router = () => {
     return(
@@ -25,6 +26,7 @@ const Router = () => {
               <Route exact path="/checkout" element={<Checkout/>}/>
               <Route exact path="/payment" element={<Payment/>}/>
               <Route exact path="/signup" element={<Signup/>}/>
+              <Route exact path="/category/:param" element={<Category/>}/>
             </Routes>
 
             {

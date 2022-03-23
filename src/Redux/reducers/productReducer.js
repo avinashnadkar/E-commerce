@@ -1,3 +1,4 @@
+let urlInitParameter = window.location.pathname.split('/')[2];
 let initState = {
     homePageProducts : [{
         "id": 1,
@@ -51,10 +52,28 @@ let initState = {
         "price": 244,
         "discount": 62,
         "quantity" : 0
-    }]
+    }],
+    categoryPageProducts : [],
+    urlParam : urlInitParameter
 }
 
 const productReducer = (state=initState,action) => {
+
+    if(action.type === "setCatProducts"){
+       let data = action.payload;
+       return {
+           ...state,
+           categoryPageProducts : [...data]
+       }
+    }
+
+    if(action.type === "setUrlParam"){
+        let param = action.payload;
+        return {
+            ...state,
+            urlParam : param
+        }
+    }
 
     return state;
 }

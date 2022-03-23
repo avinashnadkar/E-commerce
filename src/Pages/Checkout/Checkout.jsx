@@ -28,7 +28,19 @@ const Checkout = () => {
         }
     },[isAuth,navigate])
 
+    //If cart is empty show button to add products
     return(
+        
+        cart.length == 0 ?
+
+        <div className={styles.emptyCart}>
+            <img src="https://www.jiomart.com/msassets/images/emptycart.svg"/>
+            <h3>Your Cart is empty!</h3>
+            <Link to={'/'}><button>Add Products</button></Link>
+        </div>
+
+        :
+
         <div className={styles.checkout}>
 
           <div className={styles.col_1}> 

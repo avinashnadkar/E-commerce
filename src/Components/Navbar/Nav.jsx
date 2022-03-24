@@ -13,6 +13,7 @@ const Nav = () => {
     //State for category
     const [categoryData, setCategoryData] = useState(data);
     const userData = useSelector((state)=>state.userInfoReducer)
+    const cart = useSelector((state)=>state.cartReducer.cart);
     let isAuth = userData.isUserLoggedIn;
 
     //Active dropdown
@@ -55,7 +56,7 @@ const Nav = () => {
                        :
                        <Link to="/login"> <button> <PersonIcon /> <span>Sign in / Sign up</span> </button></Link> 
                     }
-                <Link to="/cart"><button> <ShoppingCartIcon/>  <span>Cart</span> </button></Link>
+                <Link to="/cart"><button> <span className={styles.cartCount} style={{display :cart.length > 0 ? "block" : "none" }}>{cart.length}</span> <ShoppingCartIcon/>  <span>Cart</span> </button></Link>
                 </div>
             </div>
 
